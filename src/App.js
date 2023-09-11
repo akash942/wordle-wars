@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "./index.css";
+import Nav from "./components/Nav";
+import Keyboard from "./components/Keyboard";
+import WordCanvas from "./components/WordCanvas";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main bg-[#0e0f10] text-white">
+      <Nav />
+      <div className="center-div p-5 ">
+        <WordCanvas />
+      </div>
+      <div className="center-div pt-2">
+        <Keyboard />
+      </div>
     </div>
   );
 }
